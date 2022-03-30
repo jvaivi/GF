@@ -1,0 +1,19 @@
+{
+  "name": "domain",
+  "version": "0.0.0",
+  "main": "index.ts",
+  "author": "Masaki Kurosawa",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "prettier": "prettier --ignore-path ../.prettierignore --write './**/*.*'",
+    "tslint": "tslint './**/*.ts' --fix",
+    "lint": "yarn prettier && yarn tslint",
+    "docs": "yarn typedoc --tsconfig ./tsconfig.json",
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "rxjs": "^6.6.3"
+  },
+  "devDependencies": {}
+}

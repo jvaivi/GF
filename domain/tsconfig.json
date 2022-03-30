@@ -1,0 +1,40 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "types": ["jest", "node"],
+    "strictPropertyInitialization": false,
+    "sourceMap": true,
+    "declaration": false,
+    "noImplicitReturns": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2018",
+    "lib": ["es2018"],
+    "typeRoots": ["../node_modules/@types", "node_modules/@types"]
+  },
+  "typedocOptions": {
+    "out": "../docs/domain",
+    "disableOutputCheck": true,
+    "excludeExternals": true,
+    "excludePrivate": true,
+    "logLevel": "Verbose",
+    "entryPoints": [
+      "./integration/integration/index.ts",
+      "./kernel/account/index.ts",
+      "./kernel/category/index.ts",
+      "./kernel/knowledge/index.ts",
+      "./kernel/organization/index.ts",
+      "./kernel/reaction/index.ts",
+      "./slack/slack-channel/index.ts",
+      "./slack/slack-file/index.ts",
+      "./slack/slack-message/index.ts",
+      "./slack/slack-reaction/index.ts",
+      "./slack/slack-user/index.ts"
+    ],
+    "exclude": ["**/*.spec.ts"]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "good-feedback"
+  },
+  "targets": {
+    "good-feedback": {
+      "hosting": {
+        "good-feedback": [
+          "good-feedback"
+        ],
+        "good-feedback-domain-docs": [
+          "good-feedback-domain-docs"
+        ]
+      }
+    }
+  }
+}
